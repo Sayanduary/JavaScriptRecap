@@ -1,0 +1,10 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+.Container {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}

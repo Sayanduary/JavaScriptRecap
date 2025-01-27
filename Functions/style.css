@@ -1,0 +1,49 @@
+body {
+  background-color: rgb(48, 48, 48);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+h1 {
+  color: aquamarine;
+}
+
+form {
+  color: azure;
+  text-align: center;
+  background-color: rgb(29, 29, 29);
+  max-width: 500px;
+  margin: auto;
+  padding: 25px;
+  border-radius: 10px;
+  font-weight: 500;
+ 
+
+}
+
+label {
+  font-size: 1em;
+
+}
+
+#textBox{
+  padding: 20px;
+  max-width: 40%;
+  border: 2px solid black;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+button{
+  padding: 10px;
+  box-shadow: none;
+  font-size: 1em;
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  color: beige;
+  cursor: pointer;
+
+}
+
