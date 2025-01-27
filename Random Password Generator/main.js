@@ -30,7 +30,7 @@ function generatePassword(length, includeLowerCase, includeUpperCase, includeNum
 
 // DOM-driven password generation function
 function generatePasswordFromUI() {
-  const length = parseInt(document.getElementById("length").value, 10);
+  const length = parseInt(document.getElementById("length").value,10);
   const includeLowerCase = document.getElementById("lowerCase").checked;
   const includeUpperCase = document.getElementById("upperCase").checked;
   const includeNumbers = document.getElementById("numbers").checked;
