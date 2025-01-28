@@ -32,5 +32,13 @@ function formatDates(element) {
 console.log(newArray)
 console.log(cubes)
 console.log(newStudents)
-console.log(max)
+// console.log(max) // Removed as it is not defined
 console.log(newDates)
+
+
+let nums = [1, 2, 3, 5];
+let squaredNums = nums.map(function (element) {
+  return Math.pow(element, 2);
+})
+
+console.log(squaredNums)
