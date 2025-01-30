@@ -15,8 +15,8 @@ const fruitNames = fruits.map(fruit => fruit.name)
 
 console.log(fruitNames)
 
-const yellowFruits = fruits.filter(fruit =>{
-  return fruit.color==="yellow"
+const yellowFruits = fruits.filter(fruit => {
+  return fruit.color === "yellow"
 })
 
 console.log(yellowFruits)
@@ -26,3 +26,22 @@ const higherCaloriesFoods = fruits.filter(fruit => {
 })
 console.log(higherCaloriesFoods)
 
+const maxFruit = fruits.reduce((max, fruit) => {
+  if (fruit.calories > max.calories) {
+    return fruit;
+  } else {
+    return max;
+  }
+})
+
+
+const minFruit = fruits.reduce((min, fruit) => {
+  if (fruit.calories < min.calories) {
+    return fruit;
+  } else {
+    return min;
+  }
+})
+
+console.log(maxFruit)
+console.log(minFruit)
