@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Previous head and style content remains the same -->
+<head>
+    <!-- Previous head content remains exactly the same -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom AMOLED Flipcard Stopwatch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flip-container">
+        <div class="flipper">
+            <div class="front">
+                <h1>Stopwatch</h1>
+                <div id="display">00:00:00:00</div>
+                <div id="controls">
+                    <button id="start" onclick="start()">Start</button>
+                    <button id="stop" onclick="stop()">Stop</button>
+                    <button id="reset" onclick="reset()">Reset</button>
+                </div>
+                <p class="flip-hint">Click to see lap times ↺</p>
+            </div>
+            <div class="back">
+                <h1>Lap Times</h1>
+                <ul class="lap-times">
+                </ul>
+                <div class="lap-controls">
+                    <button class="lap-button" onclick="addLap()">Add Lap</button>
+                </div>
+                <p class="flip-hint">Click to see stopwatch ↺</p>
+            </div>
+        </div>
+    </div>
+
+   <script src="main.js"></script>
+</body>
+</html>
