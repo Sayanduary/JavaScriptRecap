@@ -23,7 +23,7 @@ buttons.forEach(button => {
 
 buttons.forEach(button => {
   button.addEventListener("click", event => {
-    event.target.remove();
+    button.remove();
     console.log(button);
   })
 })
