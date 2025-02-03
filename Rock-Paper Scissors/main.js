@@ -5,13 +5,13 @@ function playGame(playerChoice) {
 
   const computerChoice = choices[Math.floor(Math.random() * choices.length)];
 
-  
+
 
   document.getElementById('playerDisplay').textContent = `PLAYER: ${playerChoice}`;
 
   document.getElementById('computerDisplay').textContent = `COMPUTER: ${computerChoice}`;
 
-  
+
 
   let result = '';
 
@@ -31,14 +31,17 @@ function playGame(playerChoice) {
 
     result = 'You win!';
 
+
   } else {
 
     result = 'You lose!';
 
   }
 
-  
 
-  document.getElementById('resultDisplay').textContent = result;
+
+  const resultDisplay = document.getElementById('resultDisplay');
+  resultDisplay.textContent = result;
+
 
 }

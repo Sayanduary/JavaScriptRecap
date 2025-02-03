@@ -1,0 +1,53 @@
+/* Slider Container */
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  margin: auto;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  background: #000; /* AMOLED black background */
+}
+
+/* Slider Images */
+.slider img {
+  width: 100%;
+  display: none;
+  border-radius: 15px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Active Slide */
+img.displaySlide {
+  display: block;
+  opacity: 1;
+}
+
+/* Navigation Buttons (Optional) */
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  backdrop-filter: blur(5px); /* Frosted glass effect */
+  transition: background 0.3s ease;
+}
+
+.slider button:hover {
+  background: rgba(255, 255, 255, 0.2); /* Slightly brighter on hover */
+}
+
+.slider button.prev {
+  left: 10px;
+}
+
+.slider button.next {
+  right: 10px;
+}

@@ -56,7 +56,9 @@ button:active {
 }
 
 /* Display Styling */
-#playerDisplay, #computerDisplay, #resultDisplay {
+#playerDisplay,
+#computerDisplay,
+#resultDisplay {
   font-size: 1.2rem;
   margin: 10px 0;
   padding: 10px;
@@ -87,7 +89,22 @@ button:active {
     font-size: 0.9rem;
   }
 
-  #playerDisplay, #computerDisplay, #resultDisplay {
+  #playerDisplay,
+  #computerDisplay,
+  #resultDisplay {
     font-size: 1rem;
   }
+}
+
+.greenText {
+  color: green;
+}
+
+.redText {
+  color: red;
+  ;
+}
+
+.grayText {
+  color: gray;
 }
