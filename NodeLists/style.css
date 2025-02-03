@@ -1,0 +1,21 @@
+.myBtn {
+  font-size: 1.5rem;
+  margin: 10px;
+  border: none;
+  border-radius: 50px; /* or 999px for fully rounded */
+  padding: 12px 20px;
+  background-color: #007BFF;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.myBtn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.myBtn:active {
+  background-color: #004085;
+}

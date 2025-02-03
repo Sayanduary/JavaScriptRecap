@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000;
+  /* Pure AMOLED Black */
+}
+
+#calculator {
+  width: 320px;
+  padding: 20px;
+  background: #111;
+  /* Darker black for contrast */
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 255, 255, 0.2);
+  /* Neon glow effect */
+  text-align: center;
+}
+
+#display {
+  width: 100%;
+  height: 70px;
+  font-size: 2rem;
+  text-align: right;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #222;
+  color: rgb(88, 230, 230);
+  /* Neon Cyan */
+  outline: none;
+  margin-bottom: 35px;
+  box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  width: 100%;
+  height: 60px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  background: #111;
+  color: #0ff;
+  /* Neon Cyan */
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.2);
+}
+
+button:hover {
+  background: #222;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+  transform: scale(1.05);
+}
+
+button:active {
+  background: #0ff;
+  color: #000;
+  transform: scale(0.95);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 1);
+}
+
+/* Special Buttons */
+.operator {
+
+  background: #ff1744;
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 23, 68, 0.5);
+
+}
+
+button:nth-child(4n):hover {
+  background: #ff4569;
+  box-shadow: 0 0 15px rgba(255, 23, 68, 0.8);
+}
+
+button:nth-last-child(2) {
+  background: #00e676;
+  color: black;
+  box-shadow: 0 0 10px rgba(0, 230, 118, 0.5);
+}
+
+button:nth-last-child(2):hover {
+  background: #33ff99;
+  box-shadow: 0 0 15px rgba(0, 230, 118, 0.8);
+}
